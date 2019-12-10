@@ -1,7 +1,7 @@
 # Mailer template and helper for asp.netcore 2.0 above
 
 
-first step you need add and edit this in your `appsettings.json`
+First step you need to add and edit this in your `appsettings.json`
 
 ```
   "BsixMail": {
@@ -13,41 +13,38 @@ first step you need add and edit this in your `appsettings.json`
   }
 ```
 
-how to use it?
-
-lets call the bsix inside your contoller or method
+Lets call the bsixmail inside your contoller or method
 ```
 var mailer = new BsixMailer();
 ```
-now you can use it, see the examples below
+Now you can use it, see the examples below :
 
-send on the fly variable `_Base` just optional if you want configure with approval, yes you need to configure your domain, so public can access ur public url not your localhost
+This is for send on the fly.
+Variable `_Base` just optional if you want to configure approval, you need to configure your domain, so public can access your public url not your localhost
 ```
-            var _Base = _config.GetSection("BsixMail").GetSection("UrlBase").Value;
-           
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix aproval",
-                UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
-                UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no") 
-            }, "default.txt") // <--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .Send();
+var _Base = _config.GetSection("BsixMail").GetSection("UrlBase").Value;           
+mailer.BuildBody(new
+{
+  Message = "hello from bsix aproval",
+  UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
+  UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no") 
+}, "default.txt") // Your template mail located inside BsixMail folder
+.EmailTo("mailto@example.com")
+.EmailSubject("This is subject")
+.Send();
 ```
 
-sending mail in background task
+Sending mail in background task
 ```
-            // example
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix" // your can bind this with your model, its just example
-            }, "default.txt")  // <--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .SendBackground(); // <--- background task email
+mailer.BuildBody(new
+{
+  Message = "hello from bsix" // You can bind this with your model, its just example
+}, "default.txt")  // Your template mail located inside BsixMail folder
+.EmailTo("mailto@example.com")
+.EmailSubject("This is subject")
+.SendBackground();
 ```
-you can add or modify `default.txt` with your own template, and bind it to your model, example
+You can add or edit `default.txt` with your own template, and bind it to your model, example
 
 ```
 public class Mymodel 
@@ -55,10 +52,20 @@ public class Mymodel
   public string Name {get; set;}
 }
 ```
-then your `defaul.txt` or `mytemplate.html` which is you just created with your own inside BsixMail Folder example template
+Then your `defaul.txt` or `mytemplate.html` which is you just created with your own inside BsixMail Folder example template
 ```
 Hi {{Name}} i`m from Bsixmail
 ```
+And see how to use it
+```
+var myModel =  new Mymodel() { Name = "Ihsan" };
+
+mailer.BuildBody(myModel, "mytemplate.txt")  // Your template mail located inside BsixMail folder
+.EmailTo("mailto@example.com")
+.EmailSubject("This is subject")
+.SendBackground();
+```
+
 you also can trace if email not sent in BsixMail folder
 
 if you want to take a look the source `https://github.com/ihsanbsix/Bsix-MailSender`
