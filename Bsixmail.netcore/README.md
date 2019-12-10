@@ -66,10 +66,10 @@ mailer.BuildBody(myModel, "mytemplate.txt")  // Your template mail located insid
 .SendBackground();
 ```
 
-you also can trace if email not sent in BsixMail folder
+You also can trace if email not sent in BsixMail folder
 
-if you want to take a look the source `https://github.com/ihsanbsix/Bsix-MailSender`
+If you want to take a look the source `https://github.com/ihsanbsix/Bsix-MailSender`
 
-thats it
+Thats it
 
-need help? just go to github repo and create issue 
+Need help? just go to github repo and create issue 
