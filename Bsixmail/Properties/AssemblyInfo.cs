@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("Bsixmail")]
 [assembly: AssemblyDescription("mail helper for asp.net mvc and webform")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("ihsanbsix")]
 [assembly: AssemblyProduct("Bsixmail")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
