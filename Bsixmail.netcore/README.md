@@ -1,6 +1,18 @@
 # Mailer template and helper for asp.netcore 2.0 above
 
 
+package dotnet cli (visual studio code)
+```
+dotnet add package Bsixmail.netcore
+```
+
+For visual studio user corner top, `CTRL+Q` type `package console` 
+```
+Install-Package Bsixmail.netcore
+```
+
+
+
 First step you need to add and edit this in your `appsettings.json`
 
 ```

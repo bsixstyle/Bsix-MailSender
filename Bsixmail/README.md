@@ -1,7 +1,18 @@
 # Mailer template and helper for asp.net webform or mvc .net framework 4.0 or above
 
 
-First step you need to add and edit this in your `web.config`
+package dotnet cli (visual studio code)
+```
+dotnet add package Bsixmail
+```
+
+For visual studio user corner top, `CTRL+Q` type `package console` 
+```
+Install-Package Bsixmail
+```
+
+
+First step you need to add and edit this in your `web.config` 
 
 ```
   <system.net>
