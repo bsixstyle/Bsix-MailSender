@@ -1,0 +1,1 @@
+<html><head><title></title></head><body>Message : {{Message}}<hr/>UrlApprove : {{UrlApprove}}<hr/>UrlReject : {{UrlReject}}<hr/></body><html>
