@@ -1,4 +1,4 @@
-# Mailer template and helper for asp.net asp.net mvc .net framework 4.0 or above
+# Mailer template and helper for asp.net webform or mvc .net framework 4.0 or above
 
 
 First step you need to add and edit this in your `web.config`
