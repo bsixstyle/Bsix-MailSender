@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.IO;
 using System.Linq;
-using System.Configuration;
+using System.Net;
+using System.Net.Configuration;
 using System.Net.Mail;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
-using System.Net.Configuration;
 using System.Threading;
-using System.Net;
 
 namespace Bsixmail
 {
@@ -179,12 +177,13 @@ namespace Bsixmail
             {
                 Thread.CurrentThread.IsBackground = true;
 
-                MailMessage mail = new MailMessage();
-
-                mail.Sender = new MailAddress(MailConfig.From);
-                mail.From = new MailAddress(MailConfig.From);
-                mail.Body = this.Body;
-                mail.Subject = this.Subject;
+                MailMessage mail = new MailMessage
+                {
+                    Sender = new MailAddress(MailConfig.From),
+                    From = new MailAddress(MailConfig.From),
+                    Body = this.Body,
+                    Subject = this.Subject
+                };
 
                 if (this.To != null)
                 {
@@ -259,12 +258,13 @@ namespace Bsixmail
 
         public int Send()
         {
-            MailMessage mail = new MailMessage();
-
-            mail.Sender = new MailAddress(MailConfig.From);
-            mail.From = new MailAddress(MailConfig.From);
-            mail.Body = this.Body;
-            mail.Subject = this.Subject;
+            MailMessage mail = new MailMessage
+            {
+                Sender = new MailAddress(MailConfig.From),
+                From = new MailAddress(MailConfig.From),
+                Body = this.Body,
+                Subject = this.Subject
+            };
 
             if (this.To != null)
             {

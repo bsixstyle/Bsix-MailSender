@@ -190,12 +190,14 @@ namespace Bsixmail.netcore
             {
                 Thread.CurrentThread.IsBackground = true;
 
-                MailMessage mail = new MailMessage();
 
-                mail.Sender = new MailAddress(MailConfig.UserName);
-                mail.From = new MailAddress(MailConfig.UserName);
-                mail.Body = this.Body;
-                mail.Subject = this.Subject;
+                MailMessage mail = new MailMessage
+                {
+                    Sender = new MailAddress(MailConfig.UserName),
+                    From = new MailAddress(MailConfig.UserName),
+                    Body = this.Body,
+                    Subject = this.Subject
+                };
 
                 if (this.To != null)
                 {
@@ -270,12 +272,13 @@ namespace Bsixmail.netcore
 
         public int Send()
         {
-            MailMessage mail = new MailMessage();
-
-            mail.Sender = new MailAddress(MailConfig.UserName);
-            mail.From = new MailAddress(MailConfig.UserName);
-            mail.Body = this.Body;
-            mail.Subject = this.Subject;
+            MailMessage mail = new MailMessage
+            {
+                Sender = new MailAddress(MailConfig.UserName),
+                From = new MailAddress(MailConfig.UserName),
+                Body = this.Body,
+                Subject = this.Subject
+            };
 
             if (this.To != null)
             {

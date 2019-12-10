@@ -22,3 +22,123 @@ This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System
    at System.Net.Mail.SmtpClient.Send(MailMessage message)
    at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 242
 
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.Send() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 322
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 242
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.Send() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 322
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 242
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.Send() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 322
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 242
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.Send() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 325
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 244
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.Send() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 325
+
+This is subject|System.Net.Mail.SmtpException: Failure sending mail. ---> System.Net.Sockets.SocketException: The requested name is valid, but no data of the requested type was found
+   at System.Net.Dns.InternalGetHostByName(String hostName)
+   at System.Net.Dns.GetHostAddresses(String hostNameOrAddress)
+   at System.Net.Sockets.TcpClient.Connect(String hostname, Int32 port)
+   at System.Net.Mail.SmtpConnection.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpTransport.GetConnection(String host, Int32 port)
+   at System.Net.Mail.SmtpClient.GetConnection()
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   --- End of inner exception stack trace ---
+   at System.Net.Mail.SmtpClient.Send(MailMessage message)
+   at Bsixmail.netcore.BsixMailer.<SendBackground>b__37_0() in C:\Users\user\source\repos\MailSender\Bsixmail.netcore\BsixMailer.cs:line 244
+
