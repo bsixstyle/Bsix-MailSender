@@ -1,7 +1,7 @@
 # Mailer template and helper for asp.netcore 2.0 above
 
 
-first step you need add and edit inside your appsettings.json
+first step you need add and edit this in your `appsettings.json`
 
 ```
   "BsixMail": {
@@ -21,7 +21,7 @@ var mailer = new BsixMailer();
 ```
 now you can use it, see the examples below
 
-send on the fly variable `_Base` just optional if you want configure with approval, yes you need to configure your domain users can access ur public url not your localhost
+send on the fly variable `_Base` just optional if you want configure with approval, yes you need to configure your domain, so public can access ur public url not your localhost
 ```
             var _Base = _config.GetSection("BsixMail").GetSection("UrlBase").Value;
            
@@ -29,7 +29,7 @@ send on the fly variable `_Base` just optional if you want configure with approv
             {
                 Message = "hello from bsix aproval",
                 UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
-                UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no") // your can bind this with your model, its just example
+                UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no") 
             }, "default.txt") // <--- your template mail located inside BsixMail folder
                 .EmailTo("mailto@example.com")
                 .EmailSubject("This is subject")
@@ -61,6 +61,8 @@ Hi {{Name}} i`m from Bsixmail
 ```
 you also can trace if email not sent in BsixMail folder
 
+if you want to take a look the source `https://github.com/ihsanbsix/Bsix-MailSender`
+
 thats it
 
-need help? just go to github repo and create issue https://github.com/ihsanbsix/Bsix-MailSender
+need help? just go to github repo and create issue 
