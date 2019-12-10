@@ -57,7 +57,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="web.config.install.xdt" />
+    <None Include="web.config.transform" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="bico.ico" />
