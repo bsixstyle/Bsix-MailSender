@@ -1,4 +1,4 @@
-﻿using Bsixmail;
+﻿//using Bsixmail;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -13,26 +13,26 @@ namespace MailTestNet.Controllers
     {
         public ActionResult Index()
         {
-            var mailer = new BsixMailer();
-            var _Base = "https://yourdomain.com/controller/action"; // or ur webform service;
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix aproval",
-                UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
-                UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no")
-            }, "default.txt") // <--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .Send();
+            //var mailer = new BsixMailer();
+            //var _Base = "https://yourdomain.com/controller/action"; // or ur webform service;
+            //mailer.BuildBody(new
+            //{
+            //    Message = "hello from bsix aproval",
+            //    UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
+            //    UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no")
+            //}, "default.txt") // <--- your template mail located inside BsixMail folder
+            //    .EmailTo("mailto@example.com")
+            //    .EmailSubject("This is subject")
+            //    .Send();
 
-            // example
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix"
-            }, "default.txt")  // <--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .SendBackground(); // <--- background task email
+            //// example
+            //mailer.BuildBody(new
+            //{
+            //    Message = "hello from bsix"
+            //}, "default.txt")  // <--- your template mail located inside BsixMail folder
+            //    .EmailTo("mailto@example.com")
+            //    .EmailSubject("This is subject")
+            //    .SendBackground(); // <--- background task email
             return View();
         }
 

@@ -10,41 +10,10 @@
     <RepositoryUrl>https://github.com/ihsanbsix/Bsix-MailSender</RepositoryUrl>
     <RepositoryType>PUBLIC</RepositoryType>
     <PackageTags>netcore mailer email mail sender</PackageTags>
-    <PackageReleaseNotes>pre release 
-add this to your appsettings.json
-
-  "BsixMail": {
-    "UserName": "yourmail@domain.com", // your username
-    "Password": "yourpassword", // your password
-    "Server": "smtp.yourservermail.com", // your smtp server
-    "Port": "587", // your port 
-    "UrlBase":  "https://www.yourdomain.com" // your website domain (optional you can leave it empty)
-  }
-
-how to use it?
-
-  var _Base = _config.GetSection("BsixMail").GetSection("UrlBase").Value;
-            var mailer = new BsixMailer();
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix aproval",
-                UrlApprove = string.Format("{0}/{1}/{2}", _Base, "Approve", "yes"),
-                UrlReject = string.Format("{0}/{1}/{2}", _Base, "Approve", "no")
-            }, "default.txt") // &lt;--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .Send();
-
-            // example
-            mailer.BuildBody(new
-            {
-                Message = "hello from bsix"
-            }, "default.txt")  // &lt;--- your template mail located inside BsixMail folder
-                .EmailTo("mailto@example.com")
-                .EmailSubject("This is subject")
-                .SendBackground(); // &lt;--- background task email
-
-need help? just go to github repo and create issue https://github.com/ihsanbsix/Bsix-MailSender</PackageReleaseNotes>
+    <PackageReleaseNotes>Update document</PackageReleaseNotes>
+    <Version>1.0.1</Version>
+    <AssemblyVersion>1.0.1.1</AssemblyVersion>
+    <FileVersion>1.0.1.1</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">

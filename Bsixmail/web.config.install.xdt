@@ -1,0 +1,10 @@
+﻿<?xml version="1.0"?>
+<configuration xmlns:xdt="http://schemas.microsoft.com/XML-Document-Transform">
+  <system.net xdt:Transform="Insert" >
+    <mailSettings xdt:Transform="Insert">
+      <smtp from="yourmail@yourmail.com" xdt:Transform="Insert" >
+        <network enableSsl="true" host="smtp.gmail.com" port="587" userName="yourmail@yourmail.com" password="yourpassword" xdt:Transform="Insert" />
+      </smtp>
+    </mailSettings>
+  </system.net>
+</configuration>
