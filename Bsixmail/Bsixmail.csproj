@@ -55,6 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="bico.ico" />
+    <Content Include="license.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

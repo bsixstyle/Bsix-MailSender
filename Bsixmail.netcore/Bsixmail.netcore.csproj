@@ -1,16 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <ApplicationIcon>aico.ico</ApplicationIcon>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Authors>ihsan habibi</Authors>
     <Description>email templating from txt or html file and support backgrond task sending</Description>
-    <Copyright>
-Copyright (c) 2019 ihsan habibi</Copyright>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/ihsanbsix/Bsix-MailSender/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/ihsanbsix/Bsix-MailSender</PackageProjectUrl>
+    <Copyright>2019 Ihsan</Copyright>
     <RepositoryUrl>https://github.com/ihsanbsix/Bsix-MailSender</RepositoryUrl>
     <RepositoryType>PUBLIC</RepositoryType>
     <PackageTags>netcore mailer email mail sender</PackageTags>
@@ -48,7 +44,7 @@ how to use it?
                 .EmailSubject("This is subject")
                 .SendBackground(); // &lt;--- background task email
 
-need help? just go to github repo and create issue</PackageReleaseNotes>
+need help? just go to github repo and create issue https://github.com/ihsanbsix/Bsix-MailSender</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
